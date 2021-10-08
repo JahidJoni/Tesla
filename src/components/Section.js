@@ -5,22 +5,25 @@ const Section = () => {
     return (< Wrap >
 
         <ItemText >
-            <h1 >
-                Model S </h1>
+            <h1 > Model S </h1>
             <p> Order Online for Touchless Delivery </p>
         </ItemText>
 
-        <ButtonGroup >
+        <Buttons>
+            <ButtonGroup >
 
-            <LeftButton >
-                Custom Order
-            </LeftButton>
-            <RightButton>
-                Existing Inventory
-            </RightButton>
+                <LeftButton >
+                    Custom Order
+                </LeftButton>
+                <RightButton>
+                    Existing Inventory
+                </RightButton>
 
-        </ButtonGroup >
+            </ButtonGroup >
+            <DownArrow src="/images/down-arrow.svg">
 
+            </DownArrow>
+        </Buttons>
     </Wrap>
     );
 };
@@ -51,7 +54,7 @@ const LeftButton = styled.div`
     background-color: rgba(23, 26, 32, 0.8);
     height: 40px;
     width: 256px;
-    // margin: auto;
+    margin: 8px;
     color: white;
     display: flex;
     justify-content: center;
@@ -65,4 +68,13 @@ const LeftButton = styled.div`
 const RightButton = styled(LeftButton)
     `
 
+`
+const DownArrow = styled.img`
+    margin-top: 20px;
+    height: 48px;
+    overflow-x: hidden;
+    animation: animateDown infinite 1.5s;
+`
+const Buttons = styled.div`
+    text-align: center;
 `
