@@ -78,3 +78,6 @@ const DownArrow = styled.img`
 const Buttons = styled.div`
     text-align: center;
 `
+const Button = styled.div`
+    display: block;
+`
